@@ -30,8 +30,8 @@ DOCUMENTATION = """
 """
 
 EXAMPLES = """
-# cluster.members.yml
-plugin: vadimzud.pmxsible.members
+    # cluster.members.yml
+    plugin: vadimzud.pmxsible.members
 """
 
 import json
