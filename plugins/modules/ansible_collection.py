@@ -11,7 +11,7 @@ __metaclass__ = type
 DOCUMENTATION = """
 module: ansible_collection
 short_description: manages ansible collections
-version_added: "0.0.1"
+version_added: "1.0.0"
 description:
   - Manages ansible collections.
 options:

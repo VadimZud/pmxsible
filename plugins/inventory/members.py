@@ -11,7 +11,7 @@ __metaclass__ = type
 DOCUMENTATION = """
 name: members
 short_description: Inventory Proxmox nodes on current cluster
-version_added: "0.0.1"
+version_added: "1.0.0"
 author:
   - Vadim Zudin (@VadimZud) <zudinvadim@gmail.com>
 description:
