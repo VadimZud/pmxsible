@@ -9,29 +9,29 @@ from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
 DOCUMENTATION = """
-    name: members
-    short_description: Inventory Proxmox nodes on current cluster
-    version_added: "0.0.1"
-    author:
-      - Vadim Zudin <zudinvadim@gmail.com>
-    description:
-      - Get nodes of current Proxmox cluster.
-      - "Uses a configuration file as an inventory source, it must end in C(members.yml) or C(members.yaml)."
-      - Work only on Proxmox node (pmxcfs required).
-    options:
-      plugin:
-        description: The name of this plugin, it should always be set to V(vadimzud.pmxsible.members) for this plugin to recognize it as it's own.
-        required: true
-        choices: ['vadimzud.pmxsible.members']
-        type: str      
-    extends_documentation_fragment:
-      - constructed
-      - inventory_cache
+name: members
+short_description: Inventory Proxmox nodes on current cluster
+version_added: "0.0.1"
+author:
+  - Vadim Zudin (@VadimZud) <zudinvadim@gmail.com>
+description:
+  - Get nodes of current Proxmox cluster.
+  - Uses a configuration file as an inventory source, it must end in C(members.yml) or C(members.yaml).
+  - Work only on Proxmox node (pmxcfs required).
+options:
+  plugin:
+    description: The name of this plugin, it should always be set to V(vadimzud.pmxsible.members) for this plugin to recognize it as it's own.
+    required: true
+    choices: ['vadimzud.pmxsible.members']
+    type: str      
+extends_documentation_fragment:
+  - constructed
+  - inventory_cache
 """
 
 EXAMPLES = """
-    # cluster.members.yml
-    plugin: vadimzud.pmxsible.members
+# cluster.members.yml
+plugin: vadimzud.pmxsible.members
 """
 
 import json
